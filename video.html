@@ -1,0 +1,734 @@
+<?php
+session_start();
+?>
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Erfgoed Zoersel Video's</title>
+<meta name="author" content="<meta name="description" content="Ontdek het rijke erfgoed van Zoersel op oude postkaarten">">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+body
+{
+   background-color: #FFFFFF;
+   background-image: url('images/Black%20Carbon%20Fiber_cr.jpg');
+   background-attachment: scroll;
+   background-position: left top;
+   background-repeat: repeat;
+   color: #000000;
+   font-family: Arial;
+   font-weight: normal;
+   font-size: 16px;
+   line-height: 1.1875;
+   margin: 0;
+   padding: 0;
+}
+a
+{
+   color: #FFFFFF;
+   text-decoration: underline;
+}
+a:hover
+{
+   color: #00FF7F;
+   text-decoration: underline;
+}
+a.style1
+{
+   color: #FFFFFF;
+   text-decoration: none;
+}
+a.style1:visited
+{
+   color: #FFFFFF;
+   text-decoration: none;
+}
+a.style1:active
+{
+   color: #FFFFFF;
+   text-decoration: none;
+}
+a.style1:hover
+{
+   color: #32CD32;
+   text-decoration: none;
+}
+#wb_header7LayoutGrid
+{
+   clear: both;
+   position: -webkit-sticky;
+   position: sticky;
+   top: 0;
+   z-index: 7776;
+   table-layout: fixed;
+   display: table;
+   text-align: center;
+   width: 100%;
+   background-color: transparent;
+   background-image: url('images/Black%20Carbon%20Fiber_cr.jpg');
+   background-repeat: repeat;
+   background-position: left top;
+   border: 0px solid #CCCCCC;
+   border-radius: 0px;
+   box-sizing: border-box;
+   margin: 0;
+}
+#header7LayoutGrid
+{
+   box-sizing: border-box;
+   display: flex;
+   flex-direction: row;
+   flex-wrap: wrap;
+   padding: 15px 0 20px 0;
+   margin-right: auto;
+   margin-left: auto;
+   max-width: 1140px;
+}
+#header7LayoutGrid > .col-1, #header7LayoutGrid > .col-2, #header7LayoutGrid > .col-3
+{
+   box-sizing: border-box;
+   font-size: 0;
+   min-height: 1px;
+   padding-right: 10px;
+   padding-left: 10px;
+   position: relative;
+}
+#header7LayoutGrid > .col-1, #header7LayoutGrid > .col-2, #header7LayoutGrid > .col-3
+{
+   flex: 0 0 auto;
+}
+#header7LayoutGrid > .col-1
+{
+   background-color: transparent;
+   background-image: none;
+   border: 0px solid #FFFFFF;
+   border-radius: 0px;
+   flex-basis: 25%;
+   max-width: 25%;
+   display: flex;
+   flex-wrap: wrap;
+   align-content: center;
+   align-self: stretch;
+   align-items: center;
+   justify-content: center;
+   text-align: center;
+}
+#header7LayoutGrid > .col-2
+{
+   background-color: transparent;
+   background-image: none;
+   border: 0px solid #FFFFFF;
+   border-radius: 0px;
+   flex-basis: 50%;
+   max-width: 50%;
+   display: flex;
+   flex-wrap: wrap;
+   align-content: center;
+   align-self: stretch;
+   align-items: center;
+   justify-content: center;
+   text-align: center;
+}
+#header7LayoutGrid > .col-3
+{
+   background-color: transparent;
+   background-image: none;
+   border: 0px solid #FFFFFF;
+   border-radius: 0px;
+   flex-basis: 25%;
+   max-width: 25%;
+   display: flex;
+   flex-wrap: wrap;
+   align-content: center;
+   align-self: stretch;
+   align-items: center;
+   justify-content: center;
+   text-align: center;
+}
+@media (max-width: 768px)
+{
+#header7LayoutGrid > .col-1, #header7LayoutGrid > .col-2, #header7LayoutGrid > .col-3
+{
+   flex-basis: 100% !important;
+   max-width: 100% !important;
+}
+}
+#wb_header7Menu
+{
+   border: 0px solid #C0C0C0;
+   border-radius: 0px;
+   background-color: transparent;
+   margin: 0;
+   text-align: center;
+   position: relative;
+   z-index: 1111 !important;
+}
+#wb_header7Menu ul
+{
+   list-style-type: none;
+   margin: 0;
+   padding: 0;
+   position: relative;
+   display: inline-block;
+}
+#wb_header7Menu li
+{
+   float: left;
+   margin: 0;
+   padding: 0px 4px 0px 0px;
+}
+#wb_header7Menu a
+{
+   display: block;
+   float: left;
+   color: #FFFFFF;
+   border: 2px solid #5B7B9D;
+   border-radius: 7px;
+   background-color: #4169E1;
+   background-image: none;
+   font-family: Arial;
+   font-weight: bold;
+   font-size: 16px;
+   font-style: normal;
+   text-decoration: none;
+   text-transform: none;
+   text-align: center;
+   vertical-align: middle;
+}
+#wb_header7Menu > ul > li > a
+{
+   height: 26px;
+   line-height: 26px;
+   padding: 0px 10px 0px 10px;
+}
+#wb_header7Menu li:hover a, #wb_header7Menu a:hover, #wb_header7Menu .active
+{
+   color: #696969;
+   border: 2px solid #B6AB8C;
+   background-color: #FFFFFF;
+   background-image: none;
+}
+#wb_header7Menu li.firstmain
+{
+   padding-left: 0px;
+}
+#wb_header7Menu li.lastmain
+{
+   padding-right: 0px;
+}
+#wb_header7Menu br
+{
+   clear: both;
+   font-size: 1px;
+   height: 0;
+   line-height: 0;
+}
+#wb_indexText1 
+{
+   background-color: transparent;
+   background-image: none;
+   border: 0px solid #000000;
+   border-radius: 0px;
+   padding: 0;
+   margin: 0;
+   text-align: center;
+}
+#wb_indexText1 div
+{
+   text-align: center;
+}
+#wb_indexText1
+{
+   display: block;
+   margin: 0;
+   box-sizing: border-box;
+   width: 100%;
+}
+#wb_footer8LayoutGrid
+{
+   clear: both;
+   position: relative;
+   table-layout: fixed;
+   display: table;
+   text-align: center;
+   width: 100%;
+   background-color: #4169E1;
+   background-image: none;
+   border: 1px solid #CCCCCC;
+   border-radius: 0px;
+   box-sizing: border-box;
+   margin: 0;
+}
+#footer8LayoutGrid
+{
+   box-sizing: border-box;
+   padding: 10px 15px 10px 15px;
+   margin-right: auto;
+   margin-left: auto;
+}
+#footer8LayoutGrid > .row
+{
+   margin-right: -15px;
+   margin-left: -15px;
+}
+#footer8LayoutGrid > .row > .col-1
+{
+   box-sizing: border-box;
+   font-size: 0;
+   min-height: 1px;
+   padding-right: 15px;
+   padding-left: 15px;
+   position: relative;
+}
+#footer8LayoutGrid > .row > .col-1
+{
+   float: left;
+}
+#footer8LayoutGrid > .row > .col-1
+{
+   background-color: transparent;
+   background-image: none;
+   border: 0px solid #FFFFFF;
+   border-radius: 0px;
+   width: 100%;
+   text-align: center;
+}
+#footer8LayoutGrid:before,
+#footer8LayoutGrid:after,
+#footer8LayoutGrid .row:before,
+#footer8LayoutGrid .row:after
+{
+   display: table;
+   content: " ";
+}
+#footer8LayoutGrid:after,
+#footer8LayoutGrid .row:after
+{
+   clear: both;
+}
+@media (max-width: 768px)
+{
+#footer8LayoutGrid > .row > .col-1
+{
+   float: none;
+   width: 100%;
+}
+}
+#wb_footer8Text 
+{
+   background-color: transparent;
+   background-image: none;
+   border: 0px solid #000000;
+   border-radius: 0px;
+   padding: 0;
+   margin: 0;
+   text-align: center;
+}
+#wb_footer8Text div
+{
+   text-align: center;
+}
+#wb_footer8Text
+{
+   display: block;
+   margin: 0;
+   box-sizing: border-box;
+   width: 100%;
+}
+#hx3_moviesInlineFrame1
+{
+   box-sizing: border-box;
+   border: 3px solid #C0C0C0;
+   border-radius: 0px;
+   margin: 0;
+}
+#hx3_moviesInlineFrame1
+{
+   display: inline-block;
+   width: 844px;
+   height: 474px;
+   vertical-align: top;
+}
+#wb_VideoTextMenu1
+{
+   background-color: transparent;
+   background-image: none;
+   color: #FFFFFF;
+   font-family: Arial;
+   font-size: 13px;
+   margin: 0;
+   text-align: left;
+   overflow: hidden;
+}
+#wb_VideoTextMenu1 span
+{
+   display: block;
+   margin: 0 0 3px 0;
+   line-height: 16px;
+}
+#wb_familyTextMenu1
+{
+   background-color: transparent;
+   background-image: none;
+   color: #FFFFFF;
+   font-family: Arial;
+   font-size: 13px;
+   margin: 0;
+   text-align: left;
+   overflow: hidden;
+}
+#wb_familyTextMenu1 span
+{
+   display: block;
+   margin: 0 0 3px 0;
+   line-height: 16px;
+}
+#wb_intro10LayoutGrid
+{
+   clear: both;
+   position: relative;
+   table-layout: fixed;
+   display: table;
+   text-align: center;
+   width: 100%;
+   background-color: transparent;
+   background-image: none;
+   border: 0px solid #CCCCCC;
+   border-radius: 0px;
+   box-sizing: border-box;
+   margin: 0;
+}
+#intro10LayoutGrid
+{
+   box-sizing: border-box;
+   padding: 20px 15px 10px 15px;
+   margin-right: auto;
+   margin-left: auto;
+   max-width: 1140px;
+}
+#intro10LayoutGrid > .row
+{
+   margin-right: -15px;
+   margin-left: -15px;
+}
+#intro10LayoutGrid > .row > .col-1
+{
+   box-sizing: border-box;
+   font-size: 0;
+   min-height: 1px;
+   padding-right: 15px;
+   padding-left: 15px;
+   position: relative;
+}
+#intro10LayoutGrid > .row > .col-1
+{
+   float: left;
+   height: 480px;
+}
+#intro10LayoutGrid > .row > .col-1
+{
+   background-color: transparent;
+   background-image: none;
+   border: 0px solid #FFFFFF;
+   border-radius: 0px;
+   width: 100%;
+   text-align: center;
+}
+#intro10LayoutGrid:before,
+#intro10LayoutGrid:after,
+#intro10LayoutGrid .row:before,
+#intro10LayoutGrid .row:after
+{
+   display: table;
+   content: " ";
+}
+#intro10LayoutGrid:after,
+#intro10LayoutGrid .row:after
+{
+   clear: both;
+}
+@media (max-width: 768px)
+{
+#intro10LayoutGrid > .row > .col-1
+{
+   float: none;
+   width: 100% !important;
+   height: auto;
+}
+}
+#wb_footer13LayoutGrid1
+{
+   clear: both;
+   position: relative;
+   table-layout: fixed;
+   display: table;
+   text-align: center;
+   width: 100%;
+   background-color: #2F3337;
+   background-image: none;
+   border: 0px solid #233140;
+   border-radius: 0px;
+   box-sizing: border-box;
+   margin: 0;
+}
+#footer13LayoutGrid1
+{
+   box-sizing: border-box;
+   padding: 0;
+   margin-right: auto;
+   margin-left: auto;
+}
+#footer13LayoutGrid1 > .row
+{
+   margin-right: 0;
+   margin-left: 0;
+}
+#footer13LayoutGrid1 > .row > .col-1
+{
+   box-sizing: border-box;
+   font-size: 0;
+   min-height: 1px;
+   padding-right: 0px;
+   padding-left: 0px;
+   position: relative;
+}
+#footer13LayoutGrid1 > .row > .col-1
+{
+   float: left;
+}
+#footer13LayoutGrid1 > .row > .col-1
+{
+   background-color: transparent;
+   background-image: none;
+   border: 0px solid #FFFFFF;
+   border-radius: 0px;
+   width: 100%;
+   text-align: left;
+}
+#footer13LayoutGrid1:before,
+#footer13LayoutGrid1:after,
+#footer13LayoutGrid1 .row:before,
+#footer13LayoutGrid1 .row:after
+{
+   display: table;
+   content: " ";
+}
+#footer13LayoutGrid1:after,
+#footer13LayoutGrid1 .row:after
+{
+   clear: both;
+}
+@media (max-width: 768px)
+{
+#footer13LayoutGrid1 > .row > .col-1
+{
+   float: none;
+   width: 100%;
+}
+}
+#wb_footer13LayoutGrid2
+{
+   clear: both;
+   position: relative;
+   table-layout: fixed;
+   display: table;
+   text-align: center;
+   width: 100%;
+   background-color: transparent;
+   background-image: url('images/video_footer13LayoutGrid2_bkgrnd.png');
+   background-repeat: repeat;
+   background-position: left top;
+   border: 0px solid #2F3337;
+   border-radius: 0px;
+   box-sizing: border-box;
+   margin: 0;
+}
+#footer13LayoutGrid2
+{
+   box-sizing: border-box;
+   padding: 20px 15px 0 15px;
+   margin-right: auto;
+   margin-left: auto;
+   max-width: 1140px;
+}
+#footer13LayoutGrid2 > .row
+{
+   margin-right: -15px;
+   margin-left: -15px;
+}
+#footer13LayoutGrid2 > .row > .col-1, #footer13LayoutGrid2 > .row > .col-2, #footer13LayoutGrid2 > .row > .col-3, #footer13LayoutGrid2 > .row > .col-4
+{
+   box-sizing: border-box;
+   font-size: 0;
+   min-height: 1px;
+   padding-right: 15px;
+   padding-left: 15px;
+   position: relative;
+}
+#footer13LayoutGrid2 > .row > .col-1, #footer13LayoutGrid2 > .row > .col-2, #footer13LayoutGrid2 > .row > .col-3, #footer13LayoutGrid2 > .row > .col-4
+{
+   float: left;
+}
+#footer13LayoutGrid2 > .row > .col-1
+{
+   background-color: transparent;
+   background-image: none;
+   border: 0px solid #FFFFFF;
+   border-radius: 0px;
+   width: 8.33333333%;
+   text-align: left;
+}
+#footer13LayoutGrid2 > .row > .col-2
+{
+   background-color: transparent;
+   background-image: none;
+   border: 0px solid #FFFFFF;
+   border-radius: 0px;
+   width: 41.66666667%;
+   text-align: left;
+}
+#footer13LayoutGrid2 > .row > .col-3
+{
+   background-color: transparent;
+   background-image: none;
+   border: 0px solid #FFFFFF;
+   border-radius: 0px;
+   width: 41.66666667%;
+   text-align: left;
+}
+#footer13LayoutGrid2 > .row > .col-4
+{
+   background-color: transparent;
+   background-image: none;
+   border: 0px solid #FFFFFF;
+   border-radius: 0px;
+   width: 8.33333333%;
+   text-align: left;
+}
+#footer13LayoutGrid2:before,
+#footer13LayoutGrid2:after,
+#footer13LayoutGrid2 .row:before,
+#footer13LayoutGrid2 .row:after
+{
+   display: table;
+   content: " ";
+}
+#footer13LayoutGrid2:after,
+#footer13LayoutGrid2 .row:after
+{
+   clear: both;
+}
+@media (max-width: 768px)
+{
+#footer13LayoutGrid2 > .row > .col-1, #footer13LayoutGrid2 > .row > .col-2, #footer13LayoutGrid2 > .row > .col-3, #footer13LayoutGrid2 > .row > .col-4
+{
+   float: none;
+   width: 100%;
+}
+}
+.darktheme #wb_footer8LayoutGrid,
+.darktheme #wb_intro10LayoutGrid,
+.darktheme #wb_footer13LayoutGrid1
+{
+   filter: invert(100%);
+}
+</style>
+<script src="bootstrap.min.js"></script>
+</head>
+<body data-bs-spy="scroll">
+<div id="wb_header7LayoutGrid">
+<div id="header7LayoutGrid">
+<div class="col-1">
+</div>
+<div class="col-2">
+<div id="wb_header7Menu" style="display:block;width:100%;z-index:0;">
+<ul id="header7Menu" role="menubar" class="nav">
+<li role="menuitem" class="nav-item firstmain"><a class="nav-link" href="./index.html" target="_self" title="index">Home</a>
+</li>
+<li role="menuitem" class="nav-item"><a class="nav-link" href="./st.antonius.html" target="_self" title="St.Antonius">St.Antonius</a>
+</li>
+<li role="menuitem" class="nav-item"><a class="nav-link" href="./halle.html" target="_self" title="Halle">Halle</a>
+</li>
+<li role="menuitem" class="nav-item"><a class="nav-link" href="./zoersel.html" target="_self" title="Zoersel">Zoersel</a>
+</li>
+<li role="menuitem" class="nav-item"><a class="nav-link active" href="./video.html" target="_self" title="Video">Video</a>
+</li>
+<li role="menuitem" class="nav-item"><a class="nav-link" href="./contact.html" target="_self">Contact</a>
+</li>
+</ul>
+
+</div>
+</div>
+<div class="col-3">
+<div id="wb_indexText1">
+<span style="color:#FFFFFF;font-family:Arial;font-size:13px;">Klik op de foto's<br>Esc om te sluiten</span>
+</div>
+</div>
+</div>
+</div>
+
+<div id="wb_footer8LayoutGrid">
+<div id="footer8LayoutGrid">
+<div class="row">
+<div class="col-1">
+<div id="wb_footer8Text">
+<span style="color:#FFFFFF;font-family:'Bookman Old Style';font-size:27px;"><strong><em>Video</em></strong></span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="wb_intro10LayoutGrid">
+<div id="intro10LayoutGrid">
+<div class="row">
+<div class="col-1">
+<iframe name="Frame1" id="hx3_moviesInlineFrame1" src="https://www.youtube.com/embed/7lQUwLUBjQI" scrolling="no" allowfullscreen></iframe>
+</div>
+</div>
+</div>
+</div>
+<div id="wb_footer13LayoutGrid1">
+<div id="footer13LayoutGrid1">
+<div class="row">
+<div class="col-1">
+<div id="wb_footer13LayoutGrid2">
+<div id="footer13LayoutGrid2">
+<div class="row">
+<div class="col-1">
+</div>
+<div class="col-2">
+<div id="wb_familyTextMenu1" style="display:inline-block;width:385px;height:246px;z-index:5;">
+<span><a href="https://www.youtube.com/embed/7lQUwLUBjQI" class="style1" target="Frame1" title="Zoerselhof , geschiedenis en restauratie">Zoerselhof , geschiedenis en restauratie</a></span>
+<span><a href="https://www.youtube.com/embed/W1llfyM4t5g" class="style1" target="Frame1">Koninklijk bezoek Zoersel  30-11-2022</a></span>
+<span><a href="https://www.youtube.com/embed/6fEAC98ZVWY" class="style1" target="Frame1" title="Hallerhof Geschiedenis">Hallerhof Geschiedenis</a></span>
+<span><a href="https://www.youtube.com/embed/Bk_OTp-vgG4" class="style1" target="Frame1" title="Het Zoerselbos: Leo Cautereels, de bescherming . Deel 1">Het Zoerselbos: Leo Cautereels, de bescherming . Deel 1</a></span>
+<span><a href="https://www.youtube.com/embed/70c55SPF3MY" class="style1" target="Frame1" title="Het Zoerselbos: Leo Cautereels, de bescherming . Deel 2">Het Zoerselbos: Leo Cautereels, de bescherming . Deel 2</a></span>
+<span><a href="https://www.youtube.com/embed/2EgnGf0G9Hk" class="style1" target="Frame1" title="Pescheur Orgel in de kerk van Zoersel">Pescheur Orgel in de kerk van Zoersel</a></span>
+<span><a href="https://www.youtube.com/embed/Umhj8PrT2-U" class="style1" target="Frame1" title="Fata Morgana Zoersel 16/08/2008">Fata Morgana Zoersel 16/08/2008</a></span>
+<span><a href="https://www.youtube.com/embed/ibR8nEvsuxc" class="style1" target="Frame1" title="FONS van het Boshuisje in Zoersel (1953 )">FONS van het Boshuisje in Zoersel (1953 )</a></span>
+<span><a href="https://www.youtube.com/embed/ss8_SemW9gs" class="style1" target="Frame1" title="Intrede Pastoor Jan Buffels in St Antonius 1953">Intrede Pastoor Jan Buffels in St Antonius 1953</a></span>
+<span><a href="https://www.youtube.com/embed/orRA2AoNQXc" class="style1" target="Frame1" title="Zoersel: Onroerend Erfgoed">Zoersel: Onroerend Erfgoed</a></span>
+<span><a href="https://www.youtube.com/embed/ufNiVWPwC4Y" class="style1" target="Frame1" title="Zoersel: De Gidsenbond">Zoersel: De Gidsenbond</a></span>
+
+</div>
+</div>
+<div class="col-3">
+<div id="wb_VideoTextMenu1" style="display:inline-block;width:386px;height:126px;z-index:6;">
+<span><a href="https://www.youtube.com/embed/t4HJQFHThnM" class="style1" target="Frame1" title="Zoersel: Sfeerbeelden">Zoersel: Sfeerbeelden</a></span>
+<span><a href="https://www.youtube.com/embed/AaTby8NScA4" class="style1" target="Frame1" title="Bezoekerscentrum Zoerselbos">Bezoekerscentrum Zoerselbos</a></span>
+<span><a href="https://www.youtube.com/embed/yDSa5P5U03o" class="style1" target="Frame1" title="Zoerselbos: Boerenbloementuin bezoekerscentrum">Zoerselbos: Boerenbloementuin bezoekerscentrum</a></span>
+
+</div>
+</div>
+<div class="col-4">
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</body>
+</html>
